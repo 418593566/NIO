@@ -1,0 +1,22 @@
+1.Channel 的分类
+服务端：NioServerSocketChannel
+客户端：NioSocketChannel
+
+2.Channel介绍
+1>.通道可以同时进行读写，而流只能写
+2>.通道可以实现异步读写数据
+3>.通道可以从缓冲区读数据，也可以写数据到缓冲
+
+3>.常用的Channel类有
+FileChannel：Channel对文件操作，读取
+DatagramChannel：
+ServerSocketChannel：类似Java ServerSocket
+SocketChannel：类似Java Socket
+
+4.FileChannel类常用方法
+1>.read，从通道读取数据并放到缓冲区
+2>.write，从缓冲区读取数据放到通道中
+3>.transferForm，从目标通道中复制数据到当前通道
+4>.transferTo，把数据从当前通道复制给目标通道
+
+
